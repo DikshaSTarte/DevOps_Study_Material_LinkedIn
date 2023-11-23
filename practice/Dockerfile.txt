@@ -1,0 +1,28 @@
+
+1) Create Dockerfile
+
+FROM ubuntu:22.04
+MAINTAINER diksha
+RUN apt-get update
+CMD ["echo","This is my first container"]
+:wq!
+
+
+2) Build Image :
+# docker build -t myimage:1
+# docker images
+
+3) Create container:
+# docker run --name myc1 -d myimage:1
+# docker ps
+
+FROM ubuntu:22.04
+MAINTAINER diksha
+RUN apt-get update
+ENTRYPOINT ["echo"]
+CMD ["This is my first container"]
+:wq!
+
+
+
+docker build -t myimage:2 .

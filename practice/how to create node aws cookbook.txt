@@ -1,0 +1,16 @@
+1. AWS accont public ip copy
+2.run chefDK as administrator
+3.got to https://manage.chef.io/
+4.knife bootstrap 34.208.108.205 --ssh-user ubuntu --sudo --identity-file "C:\Users\MFS088\Downloads\keyB.pem" -N mynodeB
+5.cd cookbook\
+6.chef generate cookbook mycookbook-A
+7.ls cd recipes\
+8.vs code : default : p
+9. cd cookbook-B\
+10.berks install
+11.berks upload
+12.https://manage.chef.io/organizations/demo21/nodes
+13. select node and click on edit run list then drag and drop cookbook file and click on save run list
+copy ssh and pem file downloads location and paste
+14. sudo apt-get update
+15. chef-client 

@@ -1,0 +1,22 @@
+1)  Dockerfile
+
+vi Dockerfile
+
+FROM tomcat:10.1.14-jdk11
+MAINTAINER diksha
+COPY Jenkins.war /usr/local/tomcat/webapps/
+EXPOSE 8080
+CMD ["catalina.sh","run"]
+
+:wq!
+
+
+COPY source destination
+source --> Jenkins.war
+destination : /usr/local/tomcat/webapps/
+jenkins.io--> https://www.jenkins.io/download/---> Generic Java Package .war ----> right click copy link 
+
+
+
+2) Build image
+3) Create a container

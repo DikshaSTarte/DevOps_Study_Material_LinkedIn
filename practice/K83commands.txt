@@ -1,0 +1,11 @@
+To start using your cluster, you need to run the following as a regular user:
+
+  mkdir -p $HOME/.kube
+  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+
+
+
+kubeadm join 172.31.11.139:6443 --token v64ysy.4a1g888rwbvulfpa \
+    --discovery-token-ca-cert-hash sha256:7f1f22450a4177a0a2627f475615ce26b0b4b0b9862c1c51b74ea945993509dd
